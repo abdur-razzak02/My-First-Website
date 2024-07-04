@@ -3,15 +3,29 @@
 
 
 body{
-    font-family: "Montserrat", sans-serif;
-    width: 1170px;
-    margin: auto;
+    font-family: "Montserrat", sans-serif;  
 }
 hr{
     border: 1px solid black;
 }
+.container-width{
+    width: 1170px;
+    margin: auto;
+}
 /*------------------ headline ----------------- */
+.logo {
+    width: 425px;
+    display: inline;
+    float: left;
+    font-size: 30px;
+}
 
+nav.site-nav {
+    width: 500px;
+    text-align: center;
+    float: inline-start;
+    font-size: 25px;
+}
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -57,6 +71,7 @@ hr{
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    float: inline-end;
 }
 
 .cta:hover {
@@ -318,7 +333,7 @@ select.department {
     padding: 5px;
     position: absolute;
     top: -55px;
-    left: 400px;
+    left: 44%;
     visibility: hidden;
 }
 .tooltip:hover .tooltiptext{
@@ -521,10 +536,13 @@ select.department {
 }
 
 /*------------------ footer ----------------- */
+#contact{
+    background-color: black;
+}
 .footer-div{
     display: grid;
     grid-template-columns: 30% 45% 10%;
-    background-color: black;
+    /* background-color: black; */
 
 }
 .footer-div > div{
